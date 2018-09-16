@@ -13891,7 +13891,7 @@ static int tasha_codec_probe(struct snd_soc_codec *codec)
 	}
 
 		tasha->mbhc.wcd9xxx_sdev.name= "h2w";
-		tasha->mbhc.wcd9xxx_sdev.print_name = wcd9xxx_print_name;
+/**		tasha->mbhc.wcd9xxx_sdev.print_name = wcd9xxx_print_name; **/
 		ret = switch_dev_register(&tasha->mbhc.wcd9xxx_sdev);
 		if (ret)
 		{
